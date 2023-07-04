@@ -1,3 +1,11 @@
+source:
+  branch: main
+build_rules:
+  - id: allow-zero-high-impact
+    finding_types:
+      - vuln
+    severity:
+      - SEVERITY_HIGH_IMPACT
 # The above rule is perhaps the most common in that it
 # is designed to be used with Pull Request and to block
 # new vulns from being introduced that aren't already on
