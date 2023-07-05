@@ -14,16 +14,16 @@ build_rules:
 # Below is enchalada with all the options shown
 #
 # ID is the name that will be reflected in the PR comments
-  - id: build-rule-enchalada
-      - vuln
-      - secret
-      - insight
-      - extscan
+  # - id: build-rule-enchalada
+  #     - vuln
+  #     - secret
+  #     - insight
+  #     - extscan
 #Do you want to block ALL types by severity?
-    severity:
-      - SEVERITY_HIGH_IMPACT   # or "critical" 
-      - SEVERITY_MEDIUM_IMPACT # or "moderate"
-      - SEVERITY_LOW_IMPACT    # or "info"
+    # severity:
+    #   - SEVERITY_HIGH_IMPACT   # or "critical" 
+    #   - SEVERITY_MEDIUM_IMPACT # or "moderate"
+    #   - SEVERITY_LOW_IMPACT    # or "info"
 #Do you want to focus on just one or more types?
     # type:
     #   - Cookie Injection
