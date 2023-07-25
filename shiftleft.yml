@@ -14,6 +14,7 @@ build_rules:
 # Below is enchalada with all the options shown
 #
 # ID is the name that will be reflected in the PR comments
+<<<<<<< HEAD
   - id: build-rule-enchalada
       - vuln
       - secret
@@ -47,6 +48,41 @@ build_rules:
       - XPath Injection
       - XSS
       - XXE
+=======
+  # - id: build-rule-enchalada
+  #     - vuln
+  #     - secret
+  #     - insight
+  #     - extscan
+#Do you want to block ALL types by severity?
+    # severity:
+    #   - SEVERITY_HIGH_IMPACT   # or "critical" 
+    #   - SEVERITY_MEDIUM_IMPACT # or "moderate"
+    #   - SEVERITY_LOW_IMPACT    # or "info"
+#Do you want to focus on just one or more types?
+    # type:
+    #   - Cookie Injection
+    #   - Deserialization
+    #   - Directory traversal
+    #   - File Write
+    #   - Insecure Cookie
+    #   - LDAP Injection
+    #   - Mail Injection
+    #   - Mass Assignment
+    #   - NoSQL Injection
+    #   - Open Redirect
+    #   - Remote Code Execution
+    #   - Sensitive Data Leak
+    #   - Session Injection
+    #   - SQL Injection
+    #   - TLS checks are disabled
+    #   - Usage of insecure API
+    #   - Weak Hash
+    #   - XML InjectionXPath Injection
+    #   - XPath Injection
+    #   - XSS
+    #   - XXE
+>>>>>>> c349ce36c39f2238ffc0b5f9b64130a0a5ece0da
 #Focus by OWASP Category?
     owasp_category:
       - a1-injection
@@ -57,4 +93,8 @@ build_rules:
       - a6-security-misconfiguration
       - a7-cross-site-scripting
       - a7-xss
+<<<<<<< HEAD
       - a8-deserialization
+=======
+      - a8-deserialization
+>>>>>>> c349ce36c39f2238ffc0b5f9b64130a0a5ece0da
