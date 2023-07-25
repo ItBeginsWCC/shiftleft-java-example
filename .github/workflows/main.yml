@@ -31,7 +31,7 @@ jobs:
       run: mvn clean package
 
     - name: NextGen Static Analysis
-      run: ${GITHUB_WORKSPACE}/sl analyze --policy 8e85a3da-19bd-463c-a59b-62555910f5fb/custom_validation:latest --app ShiftLeftJava --remediation-config dataLeakSupress.yaml --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --vcs-prefix-correction "io/shiftleft=src/main/java/" --java $(pwd)/target/hello-shiftleft-0.0.1.jar
+      run: ${GITHUB_WORKSPACE}/sl analyze --policy 8e85a3da-19bd-463c-a59b-62555910f5fb/validation_customer:latest --app ShiftLeftJava --remediation-config dataLeakSupress.yaml --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --vcs-prefix-correction "io/shiftleft=src/main/java/" --java $(pwd)/target/hello-shiftleft-0.0.1.jar
 
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
